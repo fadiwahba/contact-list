@@ -1,9 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-// variables
-$primary-color: #e91e63;
-$secondary-color: #1E70FF;
-
 // reset
 * {
   box-sizing: border-box;
@@ -33,14 +29,15 @@ h3 {
   left: 45%;
   display: inline-block;
   margin: 1em;
-  width: 25px;
-  height: 25px;
-  border: 3px solid;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
   border-radius: 100%;
-  border-color: #e91e63;
+  border-top-color: #e91e63;
+  border-bottom-color: #00a3d4;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: simple-loader 0.3s linear infinite;
+  animation: simple-loader 0.35s linear infinite;
 }
 
 @keyframes simple-loader {
