@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+// variables
+$primary-color: #e91e63;
+$secondary-color: #1E70FF;
+
+// reset
 * {
   box-sizing: border-box;
 }
@@ -8,7 +13,7 @@ body {
   font-size: 14px;
   font-family: Ubuntu, Roboto, 'Segoe UI', Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 0.1em;
-  color: #606060;
+  color: #999999;
   background: #eee;
   padding: 20px;
 }
@@ -18,4 +23,28 @@ h2,
 h3 {
   font-weight: normal;
   margin-top: 0;
+  color: #333333;
+}
+
+// css loader
+.simple-loader {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  display: inline-block;
+  margin: 1em;
+  width: 25px;
+  height: 25px;
+  border: 3px solid;
+  border-radius: 100%;
+  border-color: #e91e63;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: simple-loader 0.3s linear infinite;
+}
+
+@keyframes simple-loader {
+  to {
+    transform: rotate(180deg);
+  }
 }

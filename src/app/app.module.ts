@@ -8,6 +8,8 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { AboutComponent } from './about/about.component';
 import { FilterPipe } from './filter.pipe';
 
+import { DataService } from "./services/data.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { FilterPipe } from './filter.pipe';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
