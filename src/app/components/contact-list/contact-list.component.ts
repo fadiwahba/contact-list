@@ -25,7 +25,8 @@ export class ContactListComponent implements OnInit {
     this.selectedContact = this.contacts[0];
   }
 
-  onSelect(contact: Contact): void {
+  onSelect(event, contact: Contact): void {
+    event.preventDefault();
     this.selectedContact = contact;
   }
 

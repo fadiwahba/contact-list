@@ -1,13 +1,13 @@
 <h2>Contact List</h2>
 <form action="" id="filter">
-  <label for="filter-contact">Filter Contacts by name: </label>
+  <label for="filter-contact">Filter contacts by name: </label>
   <input type="text" name="filter-contact" [(ngModel)]="term" placeholder="e.g: John Doe">
 </form>
 <div class="flex-container">
   <div class="flex-item flex-item-left">
     <ul id="contact-listing">
-      <li *ngFor="let contact of contacts | filter:term" (click)="onSelect(contact)">
-        <a href="#">{{contact.name}}</a>
+      <li *ngFor="let contact of contacts | filter:term">
+        <a href="#" (click)="onSelect($event, contact)">{{contact.name}}</a>
       </li>
     </ul>
     <span *ngIf="contacts.length === 0">
