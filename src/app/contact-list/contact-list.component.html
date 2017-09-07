@@ -1,10 +1,10 @@
 <h2>Contact List</h2>
 <form action="" id="filter">
-  <label for="filter-contact">Filter Contacts: </label>
-  <input type="text" name="filter-contact" [(ngModel)]="term">
+  <label for="filter-contact">Filter Contacts by name: </label>
+  <input type="text" name="filter-contact" [(ngModel)]="term" placeholder="e.g: John Doe">
 </form>
 <ul id="contact-listing">
-  <li *ngFor="let contact of contacts">
+  <li *ngFor="let contact of contacts | filter:term">
     {{contact.name}}
   </li>
 </ul>
